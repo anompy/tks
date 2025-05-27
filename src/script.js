@@ -54,8 +54,7 @@ async function loadAudioAssets(audioUrls) {
 }
 
 const audiosToLoad = {
-  correct: '/asset/audio/correct.mp3',
-  background: '/img/background-theme.mp3',
+  correct: '/assets/audios/sound/correct.mp3',
 };
 
 
@@ -83,7 +82,7 @@ async function loadImagesAssets(imageUrls) {
 }
 
 const imagesToLoad = {
-  background: '/img/pemandangan-malam2.jpg',
+  background: 'assets/img/pemandangan-malam2.jpg',
 };
 
 
