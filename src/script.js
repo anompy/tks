@@ -54,7 +54,7 @@ async function loadAudioAssets(audioUrls) {
 }
 
 const audiosToLoad = {
-  correct: '/assets/audios/sound/correct.mp3',
+  correct: 'https://anompy.github.io/tks/assets/audios/sound/correct.mp3',
 };
 
 
@@ -82,7 +82,7 @@ async function loadImagesAssets(imageUrls) {
 }
 
 const imagesToLoad = {
-  background: 'assets/img/pemandangan-malam2.jpg',
+  background: 'https://anompy.github.io/tks/assets/img/pemandangan-malam2.jpg',
 };
 
 
