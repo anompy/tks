@@ -1,1 +1,84 @@
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Pulowords by Pulogame</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="preloader-container" style="display: none;">
+        <div id="preloader-logo">Pulogame</div>
+        <div id="preloader-status-bar-container">
+            <div id="preloader-status-bar"></div>
+        </div>
+    </div>
+    
+    <div id="home">
+        <div class="bubble">
+            <div id="bubble-progress">500</div>
+            <div id="bubble-title">Kampung Naga</div>
+        </div>
+        
+       <button class="button-15" id="play-button">
+            <span class="text">LEVEL 1</span>
+            <span class="material-icons">lightbulb_circle</span>
+        </button>
+    </div>
+    
+    <div id="game">
+        <div id="gameOverlay"></div>
+        <div class="crossword-grid" id="crossword-grid"></div>
+        <div id="crossword-hint"></div>
+        <div class="circle" id="circle"></div>
+        <canvas id="canvas"></canvas>
+        <div id="shuffleBtn">
+            <i class="bi bi-shuffle"></i>
+        </div>
+        
+        <div id="hint">
+            <img src="assets/icons/light-bulb.svg">
+            <div>💎 200</div>
+        </div>
+        
+        <div id="xword">
+            <div>W</div>
+        </div>
+        
+    </div>
+    
+
+<script type="text/javascript">
+const Home = {
+    home: document.getElementById('home'),
+    play_button: document.getElementById('play-button'),
+}
+
+const Game = {
+    game: document.getElementById('game'),
+    canvas: document.getElementById('canvas'),
+    circle: document.getElementById('circle'),
+    grid_area: document.getElementById('crossword-grid'),
+    hint_area: document.getElementById('crossword-hint'),
+    hint_button: document.getElementById('hint'),
+    overlay: document.getElementById('gameOverlay'),
+    word_button: document.getElementById('xword'),
+    shuffle_button: document.getElementById('shuffleBtn'),
+    grid_element: document.getElementById('crossword-grid'),
+}
+</script> 
+
+<script src="/src/gameplay.js"></script> 
+<script src="/src/animation.js"></script> 
+<script src="/src/script.js"></script> 
+
+</body>
+</html>
+
+
