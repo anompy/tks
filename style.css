@@ -151,7 +151,7 @@ body {
 
 .crossword-grid {
     position: absolute;
-    top: 1vh;
+    top: 5vh;
     display: flex;
     flex-direction: column;
     gap: 3px;
